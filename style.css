@@ -9,10 +9,11 @@ body {display: flex;
     gap: 16px;
     padding-left: 100px;
     padding-right: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content:space-between
+    justify-content:space-between;
+    align-items: flex-start
 }
+
+.right {display: flex; gap: 16px}
 
 a {
     color: #E5E7EB;
@@ -24,7 +25,6 @@ a {
     display: flex;
     flex-direction: column;
     background: #1F2937;
-    padding-top: 8px;
     gap: 16px;
 }
 
@@ -43,10 +43,12 @@ button {
     background-color: #3882F6;
     color: #F9FAF8;
     font-size: 18px
-    height: 50px;
+    padding: 18px;
     width: 75px;
-    border-radius: 15px;
-    flex-shrink: 0
+    height: 30px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin: 16px
 }
 
 .topbox {
@@ -55,16 +57,18 @@ button {
     background: #1F2937;
     padding-left: 200px;
     padding-right: 200px;
-    margin-left: 100px;
-    margin-right: 100px;
+    gap: 16px;
+    align-items: center
 }
 
 .box1, .box2, .box3, .box4 {
     display: flex; 
     flex-direction: column;
-    color: #1F2937;
+    align-items: center;
     text-align: center;
-    width: 150px
+    color: #1F2937;
+    width: 150px;
+    margin: 25px
 }
 
 .box-section {
@@ -84,7 +88,7 @@ h3 {
 .square {border-style: solid; 
     border-weight: 5px;
     border-color: #3882F6;
-    border-radius: 25px
+    border-radius: 25px;
 }
 
 .quote {
@@ -92,14 +96,13 @@ h3 {
     flex-direction: column;
     background-color: #E5E7EB;
     color: #1F2937;
-   margin: 200px;
    padding: 100px
 }
 
 .quote-tag {
     font-size: 24px; 
     font-weight: bold;
-    align-items: right;
+    text-align:right
 }
 
 .quote-text {
@@ -116,19 +119,19 @@ h3 {
 .calltoaction {
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    padding: 50px;
     background: #3882F6;
     color: #E5E7EB;
     font-size: 18px;
-    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 200px;
-    padding: 150px
 }
 
 .footer {
     background: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
-    text-justify: center;
+    text-align: center;
     padding: 18px
 }
